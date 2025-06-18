@@ -7,7 +7,7 @@
 }: {
   imports = [
     ./_packages.nix
-    ./_zsh.nix
+    # ./_zsh.nix
   ];
 
   home = {
@@ -32,7 +32,6 @@
     };
     fzf = {
       enable = true;
-      enableZshIntegration = true;
     };
     zellij = {
       enable = true;
