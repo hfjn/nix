@@ -1,9 +1,8 @@
 {
   description = "nixos";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     impermanence.url = "github:nix-community/impermanence";
 
     home-manager = {
@@ -25,7 +24,7 @@
     #   url = "github:rasmus-kirk/nixarr";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-
+  };
   outputs = {
     self,
     nixpkgs,
@@ -52,10 +51,6 @@
   in {
     # Enables `nix fmt` at root of repo to format all nix files
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
-
-    darwinConfigurations = {
-      mac1chng = mkDarwinConfig ./machines/mac1chng/configuration.nix;
-    };
 
     nixosConfigurations = {
       gimli = mkNixOSConfig ./machines/gimli/configuration.nix;
