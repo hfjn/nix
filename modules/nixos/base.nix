@@ -51,7 +51,7 @@
       vars.sshPublicKeyPersonal
     ];
     shell = pkgs.fish;
-    hashedPasswordFileb = config.sops.secrets."userPassword".path;
+    hashedPasswordFile = config.sops.secrets."userPassword".path;
   };
 
   services = {
