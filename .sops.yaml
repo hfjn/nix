@@ -1,0 +1,7 @@
+keys:
+  - &gimli age1qf0340hm3uf0nzqj3kwwp6kq6ssmmv8wrlnhgpystnxj5lcpsshs4qm2xw
+creation_rules:
+  - path_regex: secrets/[^/]+(\.(yaml|json|env|ini|conf))?$
+    key_groups:
+      - age:
+          - *gimli
