@@ -1,1 +1,1 @@
-sudo nix build .#nixosConfigurations.serveriso.config.system.build.isoImage
+sudo nix build .#nixosConfigurations.serveriso.config.system.build.isoImage 
