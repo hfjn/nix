@@ -13,6 +13,6 @@
         jq
         tree
         wget
-      ]
+      ];
   };
 }
