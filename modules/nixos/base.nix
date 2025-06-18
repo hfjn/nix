@@ -36,8 +36,8 @@
   sops = {
     defaultSopsFile = ./../../secrets/secrets.yaml;
     age.sshKeyPaths = ["/nix/secret/initrd/ssh_host_ed25519_key"];
-    secrets."user-password".neededForUsers = true;
-    secrets."user-password" = {};
+    secrets."userPassword".neededForUsers = true;
+    secrets."userPassword" = {};
     # inspo: https://github.com/Mic92/sops-nix/issues/427
     gnupg.sshKeyPaths = [];
   };
@@ -51,7 +51,7 @@
       vars.sshPublicKeyPersonal
     ];
     shell = pkgs.fish;
-    hashedPasswordFile = config.sops.secrets."user-password".path;
+    hashedPasswordFileb = config.sops.secrets."userPassword".path;
   };
 
   services = {
