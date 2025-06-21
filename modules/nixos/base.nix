@@ -80,7 +80,7 @@
 
   programs.fish.enable = true;
   security.sudo.wheelNeedsPassword = false;
-  time.timeZone = "America/New_York";
+  time.timeZone = "Europe/Berlin";
   zramSwap.enable = true;
 
   environment.persistence."/nix/persist" = {

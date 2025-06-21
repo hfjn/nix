@@ -50,13 +50,9 @@
     };
     bat.enable = true;
     btop.enable = true;
-    gallery-dl.enable = true;
     fastfetch.enable = true;
     htop.enable = true;
-    lsd.enable = true;
-    nh.enable = true;
     vim.enable = true;
-    yt-dlp.enable = true;
   };
 
   # Nicely reload system units when changing configs

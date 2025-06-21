@@ -4,6 +4,7 @@
     git
     gptfdisk
     parted
+    powertop
     ventoy
     vim
   ];
